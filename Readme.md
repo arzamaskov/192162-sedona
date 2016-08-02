@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Andrey Arzamaskov](https://up.htmlacademy.ru/htmlcss/14/user/192162).
-* Наставник: `Неизвестно`.
+* Наставник: [Liza Pozdnyakova](https://htmlacademy.ru/profile/id5608).
 
 ---
 
