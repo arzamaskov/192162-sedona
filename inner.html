@@ -10,7 +10,7 @@
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <img src="img/logo.png" alt="Sedona" height="70" width="138">
+          <a href="index.html"><img src="img/logo.png" alt="Sedona" height="70" width="138"></a>
         </div>
         <nav class="main-menu">
           <ul>
@@ -25,62 +25,28 @@
     <section class="filters">
       <div class="container">
         <form class="filters-form" action="" method="post">
-          <table>
-            <tr>
-              <th colspan="2">Инфраструктура</th>
-              <th colspan="2">Тип жилья</th>
-              <th colspan="2">Стоимость в сутки (р):</th>
-            </tr>
-            <tr>
-              <td class="field">
-                <input type="checkbox" id="pool" name="pool" value="pool">
-              </td>
-              <td class="title">
-                <label for="pool">Бассейн</label>
-              </td>
-              <td class="field">
-                <input type="checkbox" id="hotel" name="hotel" value="hotel">
-              </td>
-              <td class="title">
-                <label for="hotel">Гостиница</label>
-              </td>
-              <td>От 0 до 3000</td>
-            </tr>
-            <tr>
-              <td class="field">
-                <input type="checkbox" id="parking" name="parking" value="parking">
-              </td>
-              <td class="title">
-                <label for="parking">Парковка</label>
-              </td>
-              <td class="field">
-                <input type="checkbox" id="motel" name="motel" value="motel">
-              </td>
-              <td class="title">
-                <label for="motel">Мотель</label>
-              </td>
-              <td>
-                <input type="radio" name="price">
-                <input type="radio" name="price">
-            </tr>
-            <tr>
-              <td class="field">
-                <input type="checkbox" id="wifi" name="wifi" value="wifi">
-              </td>
-              <td class="title">
-                <label for="wifi">Wi-Fi</label>
-              </td>
-              <td class="field">
-                <input type="checkbox" id="apartment" name="apartment" value="apartment">
-              </td>
-              <td class="title">
-                <label for="apartment">Апартаменты</label>
-              </td>
-              <td>
-                <button type="button">Показать</button>
-              </td>
-            </tr>
-          </table>
+          <div class="filters-form-infrastructure">
+            <div class="filters-form-title">Инфраструктура</div>
+            <label><input type="checkbox" id="pool" name="pool" value="pool">Бассейн</label>
+            <label><input type="checkbox" id="parking" name="parking" value="parking">Парковка</label>
+            <label><input type="checkbox" id="wifi" name="wifi" value="wifi">Wi-Fi</label>
+          </div>
+          <div class="filters-form-kind">
+            <div class="filters-form-title">Тип жилья</div>
+            <label><input type="checkbox" id="hotel" name="hotel" value="hotel">Гостиница</label>
+            <label><input type="checkbox" id="motel" name="motel" value="motel">Мотель</label>
+            <label><input type="checkbox" id="apartment" name="apartment" value="apartment">Апартаменты</label>
+          </div>
+          <div class="filters-form-price">
+            <div class="filters-form-title">Стоимость в сутки (р):</div>
+            <div class="filters-form-price-min">От 0</div>
+            <div class="filters-form-price-max">до 3000</div>
+            <div class="switch">
+              <input type="radio" name="price">
+              <input type="radio" name="price">
+            </div>
+          </div>
+          <button type="button">Показать</button>
         </form>
       </div>
     </section>
@@ -102,60 +68,30 @@
           <article class="result-item">
             <img src="img/icon-hotel-amara" height="" width="">
             <h2>Amara Resort &amp;&nbsp;Spa</h2>
-            <table>
-              <tr>
-                <td>Гостиница</td>
-                <td>от 3 500 р.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#" class="btn btn-blue">Подробнее</a>
-                </td>
-                <td>
-                  <a href="#" class="btn btn-brown">Забронировать</a>
-                </td>
-              </tr>
-            </table>
+            <div class="result-item-kind">Гостиница</div>
+            <div class="result-item-price">от 3 500 р.</div>
+            <a href="#" class="btn btn-blue">Подробнее</a>
+            <a href="#" class="btn btn-brown">Забронировать</a>
             <div class="result-item-stars"></div>
             <div class="result-item-rating">Рейтинг: 8,5</div>
           </article>
           <article class="result-item">
             <img src="img/icon-hotel-desert" height="" width="">
             <h2>Desert Quail Inn</h2>
-            <table>
-              <tr>
-                <td>Мотель</td>
-                <td>от 2 000 р.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#" class="btn btn-blue">Подробнее</a>
-                </td>
-                <td>
-                  <a href="#" class="btn btn-brown">Забронировать</a>
-                </td>
-              </tr>
-            </table>
+            <div class="result-item-kind">Мотель</div>
+            <div class="result-item-price">от 2 000 р.</div>
+            <a href="#" class="btn btn-blue">Подробнее</a>
+            <a href="#" class="btn btn-brown">Забронировать</a>
             <div class="result-item-stars"></div>
             <div class="result-item-rating">Рейтинг: 8,9</div>
           </article>
           <article class="result-item">
             <img src="img/icon-hotel-villas" height="" width="">
             <h2>Villas at Poco Diablo</h2>
-            <table>
-              <tr>
-                <td>Апартаменты</td>
-                <td>от 4 000 р.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#" class="btn btn-blue">Подробнее</a>
-                </td>
-                <td>
-                  <a href="#" class="btn btn-brown">Забронировать</a>
-                </td>
-              </tr>
-            </table>
+            <div class="result-item-kind">Апартаменты</div>
+            <div class="result-item-price">от 4 000 р.</div>
+            <a href="#" class="btn btn-blue">Подробнее</a>
+            <a href="#" class="btn btn-brown">Забронировать</a>
             <div class="result-item-stars"></div>
             <div class="result-item-rating">Рейтинг: 9,2</div>
           </article>
@@ -174,7 +110,7 @@
         <div class="copyright">
           <p>Website by</p>
           <div class="logo">
-            <img src="img/logo-footer.png" alt="html academy" height="39" width="113">
+            <a href="https://htmlacademy.ru"><img src="img/logo-footer.png" alt="html academy" height="39" width="113"></a>
           </div>
         </div>
       </div>
