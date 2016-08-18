@@ -1,0 +1,28 @@
+/*оформление
+selector {
+  Позиционирование
+  Блочная модель
+  Типографика
+  Оформление
+  Анимация
+  Разное
+}
+*/
+
+body {
+  /* Типографика */
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  /* Оформление */
+  color: #000000;
+
+}
+
+ul {
+  /*Оформление*/
+  list-style: none;
+}
