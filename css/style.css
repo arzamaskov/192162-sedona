@@ -16,11 +16,471 @@ body {
   /* Типографика */
   font-size: 14px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
   /* Оформление */
   color: #000000;
 
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-header {
+  min-height: 60px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+  width: 138px;
+  height: 70px;
+  z-index: 1000;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  float: left;
+  margin-right: 50px;
+  margin-left: 70px;
+  padding: 20px 0;
+}
+
+.main-menu li:nth-child(2) {
+  margin-right: 360px;
+}
+
+.main-menu li:last-child {
+  margin-right: 0;
+}
+
+.logo-intro {
+  position: relative;
+  width: 1200px;
+  height: 773px;
+}
+
+.logo-intro::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 716;
+  left: 0;
+  width: 1200px;
+  height: 57px;
+  background-image: url("../img/intro-shape.png");
+  background-repeat: no-repeat;
+}
+
+.features-item-active-left {
+  width: 1200px;
+  height: 255px;
+}
+
+.features-item-active-left-description {
+  float: left;
+  width: 400px;
+  min-height: 255px;
+}
+
+.features-item-active-left h2 {
+  width: 190px;
+  min-height: 45px;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+
+.features-item-active-left p {
+  width: 300px;
+  min-height: 45px;
+  margin: 0 auto;
+}
+
+.features-item-active-left img {
+  float: right;
+  margin: 0 auto;
+}
+
+.features-items-benefits {
+  width: 1200px;
+  min-height: 330px;
+}
+
+.features-item {
+  float: left;
+  width: 400px;
+  min-height: 330px;
+}
+
+.features-item h2 {
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+.features-item-active-right {
+  width: 1200px;
+  height: 255px;
+}
+
+.features-item-active-right-description {
+  float: right;
+  width: 400px;
+  min-height: 255px;
+}
+
+.features-item-active-right h2 {
+  width: 190px;
+  min-height: 45px;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+
+.features-item-active-right p {
+  width: 300px;
+  min-height: 45px;
+  margin: 0 auto;
+}
+
+.features-item-active-right img {
+  float: left;
+  margin: 0 auto;
+}
+
+.features-items-no-active {
+  width: 1200px;
+  min-height: 255px;
+}
+
+.features-item-no-active {
+  float: left;
+  width: 400px;
+  min-height: 255px;
+}
+
+.features-item-no-active h2 {
+  width: 190px;
+  min-height: 45px;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 20px;
+}
+
+.features-item-no-active p {
+  width: 300px;
+  min-height: 45px;
+  margin: 0 auto;
+}
+
+.offers {
+  width: 1200px;
+  min-height: 290px;
+}
+
+.offers h2 {
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+
+.offers p {
+  padding-bottom: 50px;
+}
+
+.offers a {
+  display: inline-block;
+  padding: 35px 140px;;
+}
+
+.map {
+  width: 1200px;
+  min-height: 747px;
+}
+
+.footer-left {
+  float: left;
+
+}
+
+.footer-social {
+  float: left;
+}
+
+.copyright {
+  float: right;
+}
+
+.copyright p,
+.footer-logo,
+.footer-logo img {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > *,
+body > * > * > * > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before,
+body > * > * > * > *::before,
+body > * > * > * > * > *::before,
+body > * > * > * > * > * > *::before {
+  display: none;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * > * > * > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > * > * > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+
+  background: rgb(234, 255, 45);
+}
+
+body > * > * > * > * {
+  background: rgba(0, 45, 255, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(0, 45, 255);
+}
+
+body > * > * > * > *::before {
+  color: black;
+
+  background: rgb(0, 45, 255);
+}
+
+body > * > * > * > * > * {
+  background: rgba(0, 182, 50, 0.2);
+  box-shadow: 0 0 0 3px rgb(0, 182, 50);
+}
+
+body > * > * > * > * > *::before {
+  color: white;
+
+  background: rgb(0, 182, 50);
+}
+
+body > * > * > * > * > * > * {
+  background: rgba(205, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > * > * > * > * > *::before {
+  color: white;
+
+  background: rgb(205, 45, 82);
+}
+
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.container::before {
+  content: ".container";
+}
+
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
+}
+
+.main-navigation::before {
+  content: ".main-navigation";
+}
+
+.user-block::before {
+  content: ".user-block";
+}
+
+.index-logo::before {
+  content: ".index-logo";
+}
+
+.features::before {
+  content: ".features";
+  top: -28px;
+}
+
+.features-item::before {
+  content: ".features-item";
+}
+
+.index-content::before {
+  content: ".index-content";
+}
+
+.index-content-left::before {
+  content: ".index-content-left";
+  left: auto;
+  right: 0;
+}
+
+.index-content-right::before {
+  content: ".index-content-right";
+  left: auto;
+  right: 0;
+}
+
+.main-footer::before {
+  content: ".main-footer";
+}
+
+.main-footer .container::before {
+  top: -28px;
+}
+
+.footer-contacts::before {
+  content: ".footer-contacts";
+}
+
+.footer-social::before {
+  content: ".footer-social";
+}
+
+.footer-copyright::before {
+  content: ".footer-copyright";
 }
