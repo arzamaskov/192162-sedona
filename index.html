@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -35,8 +36,10 @@
 
         <section class="features">
           <div class="features-title">
-            <h1>Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,<br>заслуживающий большего!</h1>
-            <p>Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
+            <div class="features-title-heading">
+              <h2>Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,<br>заслуживающий большего!</h2>
+            </div>
+              <p>Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
           </div>
 
           <div class="features-items">
@@ -47,21 +50,23 @@
                 <p>&#8470;&nbsp;1</p>
                 <p>Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="features-item-active-left-image">
-                <img src="img/content-picture-house.jpg" height="255" width="800" alt="sedona house">
+              <div class="features-item-active-left-image-wrapper">
+                <div class="features-item-active-left-image">
+                  <img src="img/content-picture-house.jpg" height="255" width="800" alt="sedona house">
+                </div>
               </div>
             </div>
 
             <div class="features-items-benefits">
-              <div class="features-item">
+              <div class="features-item features-icon-house">
                 <h2>Жилье</h2>
                 <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
               </div>
-              <div class="features-item">
+              <div class="features-item features-icon-food">
                 <h2>Еда</h2>
-                <p>Всегда заказывайте фирменный бургер,Вы не&nbsp;разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер, Вы не&nbsp;разочаруетесь!</p>
               </div>
-              <div class="features-item">
+              <div class="features-item features-icon-gift">
                 <h2>Сувениры</h2>
                 <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
               </div>
@@ -73,26 +78,40 @@
                 <p>&#8470;&nbsp;2</p>
                 <p>Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
               </div>
-              <div class="features-item-active-right-image">
-                <img src="img/content-picture-nature.jpg" height="255" width="800" alt="sedona nature">
+              <div class="features-item-active-right-image-wrapper">
+                <div class="features-item-active-right-image">
+                  <img src="img/content-picture-nature.jpg" height="255" width="800" alt="sedona nature">
+                </div>
               </div>
             </div>
 
             <div class="features-items-no-active">
               <div class="features-item-no-active">
-               <h2>Небольшая площащь</h2>
-                <p>&#8470;&nbsp;3</p>
-                <p>Все достопримечательности находятся очень близко</p>
+               <h2>Небольшая площадь</h2>
+                <div class="features-item-no-active-number">
+                  <p>&#8470;&nbsp;3</p>
+                </div>
+                <div class="features-item-no-active-description">
+                  <p>Все достопримечательности находятся очень близко</p>
+                </div>
               </div>
               <div class="features-item-no-active">
                 <h2>Красивая дорога</h2>
-                <p>&#8470;&nbsp;4</p>
-                <p>Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно</p>
+                <div class="features-item-no-active-number">
+                  <p>&#8470;&nbsp;4</p>
+                </div>
+                <div class="features-item-no-active-description">
+                  <p>Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно</p>
+                </div>
               </div>
               <div class="features-item-no-active">
                 <h2>Мало туристов</h2>
-                <p>&#8470;&nbsp;5</p>
-                <p>Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</p>
+                <div class="features-item-no-active-number">
+                  <p>&#8470;&nbsp;5</p>
+                </div>
+                <div class="features-item-no-active-description">
+                  <p>Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</p>
+                </div>
               </div>
             </div>
 
@@ -100,13 +119,19 @@
         </section>
 
         <section class="offers">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="offers-title">
+            <h2>Заинтересовались?</h2>
+          </div>
+          <div class="offers-description">
+            <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          </div>
           <a href="" class="btn btn-brown">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="map">
-          <img src="img/map.jpg" alt="map" height="747" width="1200">
+          <div class="map-image">
+            <img src="img/map.jpg" alt="map" height="473" width="1200">
+          </div>
         </section>
 
       </div>
@@ -114,14 +139,18 @@
 
     <footer class="main-footer">
       <div class="container clearfix">
-        <div class="footer-left">#visitsedona</div>
-        <div class="footer-social">
-          <a href="#" class="social-btn social-btn-tw">Твиттер</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-yt">Ютуб</a>
+        <div class="footer-left">
+          <span>#visitsedona</span>
         </div>
-        <div class="copyright">
-          <p>Website by</p>
+        <div class="footer-social-wrapper">
+          <div class="footer-social">
+            <a href="#" class="social-btn social-btn-tw">Твиттер</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-yt">Ютуб</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <span>Website by</span>
           <div class="footer-logo">
             <a href="https://htmlacademy.ru"><img src="img/logo-footer.png" alt="html academy" height="39" width="113"></a>
           </div>
