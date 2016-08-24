@@ -25,28 +25,32 @@
     <section class="filters">
       <div class="container">
         <form class="filters-form" action="" method="post">
-          <div class="filters-form-infrastructure">
+          <ul class="filters-form-infrastructure">
             <div class="filters-form-title">Инфраструктура</div>
-            <label><input type="checkbox" id="pool" name="pool" value="pool">Бассейн</label>
-            <label><input type="checkbox" id="parking" name="parking" value="parking">Парковка</label>
-            <label><input type="checkbox" id="wifi" name="wifi" value="wifi">Wi-Fi</label>
-          </div>
-          <div class="filters-form-kind">
+            <li><label><input type="checkbox" id="pool" name="pool" value="pool">Бассейн</label></li>
+            <li><label><input type="checkbox" id="parking" name="parking" value="parking">Парковка</label></li>
+            <li><label><input type="checkbox" id="wifi" name="wifi" value="wifi">Wi-Fi</label></li>
+          </ul>
+          <ul class="filters-form-kind">
             <div class="filters-form-title">Тип жилья</div>
-            <label><input type="checkbox" id="hotel" name="hotel" value="hotel">Гостиница</label>
-            <label><input type="checkbox" id="motel" name="motel" value="motel">Мотель</label>
-            <label><input type="checkbox" id="apartment" name="apartment" value="apartment">Апартаменты</label>
-          </div>
+            <li><label><input type="checkbox" id="hotel" name="hotel" value="hotel">Гостиница</label></li>
+            <li><label><input type="checkbox" id="motel" name="motel" value="motel">Мотель</label></li>
+            <li><label><input type="checkbox" id="apartment" name="apartment" value="apartment">Апартаменты</label></li>
+          </ul>
           <div class="filters-form-price">
             <div class="filters-form-title">Стоимость в сутки (р):</div>
-            <div class="filters-form-price-min">От 0</div>
-            <div class="filters-form-price-max">до 3000</div>
-            <div class="switch">
-              <input type="radio" name="price">
-              <input type="radio" name="price">
+            <div class="filters-form-price-min">
+              <input type="text" name="min-price" placeholder="От 0">
             </div>
+            <div class="filters-form-price-max">
+              <input type="text" name="max-price" placeholder="До 3000">
+            </div>
+            <div class="switch">
+              <span></span>
+              <span></span>
+            </div>
+            <button type="button">Показать</button>
           </div>
-          <button type="button">Показать</button>
         </form>
       </div>
     </section>
@@ -66,50 +70,84 @@
         </div>
         <div class="result-body">
           <article class="result-item">
-            <img src="img/icon-hotel-amara" height="" width="">
-            <h2>Amara Resort &amp;&nbsp;Spa</h2>
-            <div class="result-item-kind">Гостиница</div>
-            <div class="result-item-price">от 3 500 р.</div>
-            <a href="#" class="btn btn-blue">Подробнее</a>
-            <a href="#" class="btn btn-brown">Забронировать</a>
-            <div class="result-item-stars"></div>
-            <div class="result-item-rating">Рейтинг: 8,5</div>
+            <div class="result-item-photo">
+              <img src="img/icon-amara.jpg" height="90" width="135" alt="Amara Resort Spa">
+            </div>
+            <div class="result-item-content">
+              <div class="result-item-title">
+                <h2>Amara Resort &amp;&nbsp;Spa</h2>
+              </div>
+              <div class="result-item-description">
+                <div class="result-item-kind">Гостиница</div>
+                <div class="result-item-price">от 3 500 р.</div>
+                <a href="#" class="btn btn-blue">Подробнее</a>
+                <a href="#" class="btn btn-brown">Забронировать</a>
+              </div>
+            </div>
+            <div class="result-item-popular">
+              <div class="result-item-stars"></div>
+              <div class="result-item-rating">Рейтинг: 8,5</div>
+            </div>
           </article>
           <article class="result-item">
-            <img src="img/icon-hotel-desert" height="" width="">
-            <h2>Desert Quail Inn</h2>
-            <div class="result-item-kind">Мотель</div>
-            <div class="result-item-price">от 2 000 р.</div>
-            <a href="#" class="btn btn-blue">Подробнее</a>
-            <a href="#" class="btn btn-brown">Забронировать</a>
-            <div class="result-item-stars"></div>
-            <div class="result-item-rating">Рейтинг: 8,9</div>
+            <div class="result-item-photo">
+              <img src="img/icon-desert-quail.jpg" height="90" width="135" alt="Desert Quail Inn">
+            </div>
+            <div class="result-item-content">
+              <div class="result-item-title">
+                <h2>Desert Quail Inn</h2>
+              </div>
+              <div class="result-item-description">
+                <div class="result-item-kind">Мотель</div>
+                <div class="result-item-price">от 2 000 р.</div>
+                <a href="#" class="btn btn-blue">Подробнее</a>
+                <a href="#" class="btn btn-brown">Забронировать</a>
+              </div>
+            </div>
+            <div class="result-item-popular">
+              <div class="result-item-stars"></div>
+              <div class="result-item-rating">Рейтинг: 8,9</div>
+            </div>
           </article>
           <article class="result-item">
-            <img src="img/icon-hotel-villas" height="" width="">
-            <h2>Villas at Poco Diablo</h2>
-            <div class="result-item-kind">Апартаменты</div>
-            <div class="result-item-price">от 4 000 р.</div>
-            <a href="#" class="btn btn-blue">Подробнее</a>
-            <a href="#" class="btn btn-brown">Забронировать</a>
-            <div class="result-item-stars"></div>
-            <div class="result-item-rating">Рейтинг: 9,2</div>
+            <div class="result-item-photo">
+              <img src="img/icon-villas.jpg" height="90" width="135" alt="Villas at Poco Diablo">
+            </div>
+            <div class="result-item-content">
+              <div class="result-item-title">
+                <h2>Villas at Poco Diablo</h2>
+              </div>
+              <div class="result-item-description">
+                <div class="result-item-kind">Апартаменты</div>
+                <div class="result-item-price">от 4 000 р.</div>
+                <a href="#" class="btn btn-blue">Подробнее</a>
+                <a href="#" class="btn btn-brown">Забронировать</a>
+              </div>
+            </div>
+            <div class="result-item-popular">
+              <div class="result-item-stars"></div>
+              <div class="result-item-rating">Рейтинг: 9,2</div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
     <footer class="main-footer">
-      <div class="container">
-        <div class="footer-left">#visitsedona</div>
-        <div class="footer-social">
-          <a href="#" class="social-btn social-btn-tw">Твиттер</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-yt">Ютуб</a>
+      <div class="container clearfix">
+        <div class="footer-left">
+          <span>#visitsedona</span>
         </div>
-        <div class="copyright">
-          <p>Website by</p>
-          <div class="logo">
+        <div class="footer-social-wrapper">
+          <div class="footer-social">
+            <a href="#" class="social-btn social-btn-tw">Твиттер</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-yt">Ютуб</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <span>Website by</span>
+          <div class="footer-logo">
             <a href="https://htmlacademy.ru"><img src="img/logo-footer.png" alt="html academy" height="39" width="113"></a>
           </div>
         </div>
