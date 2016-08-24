@@ -13,7 +13,7 @@
           <a href="index.html"><img src="img/logo.png" alt="Sedona" height="70" width="138"></a>
         </div>
         <nav class="main-menu">
-          <ul>
+          <ul class="clearfix">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -22,9 +22,10 @@
         </nav>
       </div>
     </header>
+
     <section class="filters">
       <div class="container">
-        <form class="filters-form" action="" method="post">
+        <form class="filters-form clearfix" action="" method="post">
           <ul class="filters-form-infrastructure">
             <div class="filters-form-title">Инфраструктура</div>
             <li><label><input type="checkbox" id="pool" name="pool" value="pool">Бассейн</label></li>
@@ -58,18 +59,20 @@
     <section class="result">
       <div class="container">
         <div class="result-top">
-          <div class="result-top-title">Найдено: 3</div>
-          <ul>
-            <li>Сортировка:</li>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
+          <div class="result-top-left">
+            <span class="result-top-title">Найдено: 3</span>
+            <span>Сортировка:</span>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По рейтингу</a>
+          </div>
+          <div class="result-top-right">
+            <a href="#">вверх</a>
+            <a href="#">вниз</a>
+          </div>
         </div>
         <div class="result-body">
-          <article class="result-item">
+          <article class="result-item clearfix">
             <div class="result-item-photo">
               <img src="img/icon-amara.jpg" height="90" width="135" alt="Amara Resort Spa">
             </div>

@@ -94,9 +94,7 @@ img {
 
 /* --- Index photo --- */
 .intro {
-  width: 1200px;
-  height: 509px;
-
+  min-height: 509px;
 
   /* для сетки */
   box-shadow: 0 0 0 1px rgb(255, 45, 82);
@@ -104,16 +102,19 @@ img {
 
 .intro-logo-wrapper {
   position: relative;
+  /*min-height: 509px;*/
+  /*background: #81888e url("../img/background-photo.jpg") no-repeat 50% 16%;*/
   height: 509px;
-  background: #81888e url("../img/background-photo.jpg") no-repeat 50% 16%;
+  overflow: hidden;
 }
 
 .intro-logo-photo {
   display: block;
-  padding-top: 76px;
+  /*padding-top: 76px;*/
   margin: 0 auto;
-  width: 458px;
-  height: 352px;
+  /*width: 458px;*/
+  margin-top: -55px;
+  min-height: 352px;
 }
 
 .intro-logo-wrapper::after {
@@ -128,7 +129,6 @@ img {
 
 /* --- Main heading --- */
 .features-title {
-  width: 1200px;
   min-height: 150px;
   margin-bottom: 5px;
 
@@ -150,8 +150,7 @@ img {
 
 /* --- FEACHERS --- */
 .features-item-active-left {
-  width: 1200px;
-  height: 256px;
+  min-height: 256px;
 
 
   /* для сетки */
@@ -192,7 +191,6 @@ img {
 }
 
 .features-items-benefits {
-  width: 1200px;
   min-height: 330px;
 
   /* для сетки */
@@ -236,8 +234,7 @@ img {
 }
 
 .features-item-active-right {
-  width: 1200px;
-  height: 255px;
+  min-height: 255px;
 
   /* для сетки*/
   box-shadow: 0 0 0 1px rgb(255, 45, 82);
@@ -279,7 +276,6 @@ img {
 
 
 .features-items-no-active {
-  width: 1200px;
   min-height: 257px;
   background-color: #eeeeee;
 
@@ -316,7 +312,6 @@ img {
 
 /* --- Offers --- */
 .offers {
-  width: 1200px;
   min-height: 237px;
 
 
@@ -350,7 +345,6 @@ img {
 
 /* --- MAP --- */
 .map {
-  width: 1200px;
   height: 473px;
   background: #cbdda9 url("../img/map.jpg") no-repeat 50% 60%;
 
@@ -359,7 +353,6 @@ img {
 }
 
 .map-iframe {
-  width: 1200px;
   min-height: 473px;
 }
 
@@ -367,7 +360,6 @@ img {
 /* --- Filters --- */
 
 .filters-form {
-  width: 1200px;
   min-height: 218px;
   background: #566f83 url("../img/filter-background.jpg") no-repeat 50% 10%;
 }
@@ -411,36 +403,29 @@ img {
 }
 
 .result-top {
-  width: 1200px;
   min-height: 90px;
 }
 
-.result-top ul {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.result-top-left {
+  text-align: left;
 }
 
-.result-top-title,
-.result-top li {
-  display: inline-block;
+.result-top-right {
+  text-align: right;
 }
 
 .result-body {
-  width: 1200px;
   min-height: 453px;
 }
 
 .result-item {
-  width: 1200px;
   min-height: 152px;
 }
 
 .result-item-photo {
   float: left;
   width: 135px;
-  height: 90px;
+  min-height: 90px;
 }
 
 .result-item-content {
@@ -507,7 +492,7 @@ img {
 
 .footer-logo {
   width: 113px;
-  height: 39px;
+  min-height: 39px;
   margin: 0 auto;
   margin-top: 40px;
   margin-right: 103px;
