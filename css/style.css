@@ -42,10 +42,19 @@ img {
   margin: 0 auto;
   padding: 0;
 
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(0, 0, 282);
+
 }
 
+/* --- HEADER --- */
 .main-header {
   min-height: 55px;
+
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .logo {
@@ -68,6 +77,10 @@ img {
   margin-right: 75px;
   margin-left: 72px;
   padding-top: 14px;
+
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(0, 245, 82);
 }
 
 .main-menu li:nth-child(2) {
@@ -79,35 +92,49 @@ img {
   margin-left: 92px;
 }
 
+/* --- Index photo --- */
 .intro {
   width: 1200px;
   height: 509px;
-  overflow: hidden;
+
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
-.logo-intro {
+.intro-logo-wrapper {
   position: relative;
-  margin-top: -55px;
+  height: 509px;
+  background: #81888e url("../img/background-photo.jpg") no-repeat 50% 16%;
 }
 
-.logo-intro::after {
-  content: "";
+.intro-logo-photo {
   display: block;
+  padding-top: 76px;
+  margin: 0 auto;
+  width: 458px;
+  height: 352px;
+}
+
+.intro-logo-wrapper::after {
+  content: "";
   position: absolute;
-  top: 507;
   left: 0;
+  bottom: 0;
   width: 1200px;
   height: 57px;
-  background-image: url("../img/intro-shape.png");
-  background-repeat: no-repeat;
+  background: url("../img/intro-shape.png") no-repeat 50% 50%;
 }
 
+/* --- Main heading --- */
 .features-title {
   width: 1200px;
   min-height: 150px;
   margin-bottom: 5px;
-  /* для сетки
-box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
+
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .features-title-heading {
@@ -115,16 +142,20 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
   margin-bottom: 27px;
   line-height: 26px;
   font-weight: 700;
-  /* для сетки
-box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
+
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
+/* --- FEACHERS --- */
 .features-item-active-left {
   width: 1200px;
   height: 256px;
 
-  /* для сетки*/
-/*box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .features-item-active-left-description {
@@ -140,9 +171,6 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
   width: 800px;
   height: 256px;
   overflow: hidden;
-
-  /* для сетки*/
-/*box-shadow: 0 0 0 3px rgb(0, 255, 82);*/
 }
 
 .features-item-active-left-image {
@@ -166,6 +194,9 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
 .features-items-benefits {
   width: 1200px;
   min-height: 330px;
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px yellow;
 }
 
 .features-item {
@@ -209,7 +240,7 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
   height: 255px;
 
   /* для сетки*/
-/*box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
+  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .features-item-active-right-description {
@@ -226,8 +257,6 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
   height: 256px;
   overflow: hidden;
 
-  /* для сетки*/
-/*box-shadow: 0 0 0 3px rgb(0, 255, 82);*/
 }
 
 .features-item-active-right-image {
@@ -253,6 +282,9 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
   width: 1200px;
   min-height: 257px;
   background-color: #eeeeee;
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .features-item-no-active {
@@ -281,9 +313,15 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
   margin: 0 auto;
 }
 
+
+/* --- Offers --- */
 .offers {
   width: 1200px;
   min-height: 237px;
+
+
+  /* для сетки */
+  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .offers-title {
@@ -309,15 +347,25 @@ box-shadow: 0 0 0 3px rgb(255, 45, 82);*/
   color: #ffffff;
 }
 
+
+/* --- MAP --- */
 .map {
   width: 1200px;
   height: 473px;
-  overflow: hidden;
+  background: #cbdda9 url("../img/map.jpg") no-repeat 50% 60%;
+
+  /* для сетки */
+  box-shadow: 0 0 0 2px rgb(255, 45, 82);
 }
 
-.map-image {
-  margin-top: -140px;
+.map-iframe {
+  width: 1200px;
+  min-height: 473px;
 }
+
+
+
+/* --- MAIN FOOTER --- */
 
 .main-footer {
   min-height: 122px;
