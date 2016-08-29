@@ -1,3 +1,43 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
 /*оформление
 selector {
   Позиционирование
@@ -42,19 +82,12 @@ img {
   margin: 0 auto;
   padding: 0;
 
-
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(0, 0, 282);
-
 }
 
 /* --- HEADER --- */
 .main-header {
   min-height: 55px;
 
-
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .logo {
@@ -76,11 +109,23 @@ img {
   float: left;
   margin-right: 75px;
   margin-left: 72px;
-  padding-top: 14px;
+  padding-top: 16px;
 
+}
 
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(0, 245, 82);
+.main-menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.main-menu a:hover {
+  color: #81b3d2;
+}
+
+.main-menu a:active {
+  color: #000000;
+  opacity: 0.3;
 }
 
 .main-menu li:nth-child(2) {
@@ -96,8 +141,6 @@ img {
 .intro {
   min-height: 509px;
 
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .intro-logo-wrapper {
@@ -129,32 +172,22 @@ img {
 
 /* --- Main heading --- */
 .features-title {
-  min-height: 150px;
-  margin-bottom: 5px;
+  min-height: 140px;
 
-
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .features-title-heading {
-  margin-top: 60px;
-  margin-bottom: 27px;
+  margin-top: 61px;
+  margin-bottom: 28px;
   line-height: 26px;
   font-weight: 700;
 
-
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 /* --- FEACHERS --- */
 .features-item-active-left {
   min-height: 256px;
 
-
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .features-item-active-left-description {
@@ -180,7 +213,7 @@ img {
   width: 190px;
   min-height: 45px;
   margin: 0 auto;
-  margin-top: 54px;
+  margin-top: 55px;
   margin-bottom: 15px;
 }
 
@@ -205,14 +238,14 @@ img {
 
 .features-item h2 {
   margin: 0 auto;
-  margin-top: 160px;
+  margin-top: 161px;
 }
 
 .features-item p {
-  width: 310px;
+  width: 300px;
   min-height: 50px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .features-icon-house {
@@ -236,8 +269,6 @@ img {
 .features-item-active-right {
   min-height: 255px;
 
-  /* для сетки*/
-  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .features-item-active-right-description {
@@ -264,7 +295,7 @@ img {
   width: 170px;
   min-height: 45px;
   margin: 0 auto;
-  margin-top: 54px;
+  margin-top: 56px;
   margin-bottom: 15px;
 }
 
@@ -279,8 +310,6 @@ img {
   min-height: 257px;
   background-color: #eeeeee;
 
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .features-item-no-active {
@@ -294,13 +323,13 @@ img {
   min-height: 15px;
   margin: 0 auto;
   margin-top: 47px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .features-item-no-active-number {
   width: 60px;
   margin: 0 auto;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 
 .features-item-no-active-description {
@@ -312,15 +341,12 @@ img {
 
 /* --- Offers --- */
 .offers {
-  min-height: 237px;
+  min-height: 233px;
 
-
-  /* для сетки */
-  box-shadow: 0 0 0 1px rgb(255, 45, 82);
 }
 
 .offers-title {
-  margin-top: 55px;
+  margin-top: 58px;
   font-size: 20px;
   font-weight: 700;
 }
@@ -332,7 +358,7 @@ img {
 .offers a {
   display: inline-block;
   vertical-align: top;
-  margin-top: 35px;
+  margin-top: 31px;
   padding: 30px 140px;
   background-color: #766357;
   text-decoration: none;
@@ -348,8 +374,6 @@ img {
   height: 473px;
   background: #cbdda9 url("../img/map.jpg") no-repeat 50% 60%;
 
-  /* для сетки */
-  box-shadow: 0 0 0 2px rgb(255, 45, 82);
 }
 
 .map-iframe {
