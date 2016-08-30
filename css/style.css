@@ -361,18 +361,202 @@ img {
 }
 
 .offers a {
+
+}
+
+/* --- SEARCH FORM --- */
+.search-form-wrapper {
+  position: relative;
+  width: 568px;
+  margin: 0 auto;
+}
+
+.search-form-wrapper a {
   display: inline-block;
   vertical-align: top;
   margin-top: 31px;
-  padding: 30px 140px;
+  padding: 30px 0;
+  width: 568px;
   background-color: #766357;
   text-decoration: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+
 }
 
+.search-form {
+  display: none; // Выключить
+  position: absolute;
+  top: 117px;
+  left: 0;
+  width: 568px;
+  padding: 57px 55px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  line-height: 26px;
+  text-align: left;
+  font-weight: bold;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.search-form-page.search-form {
+  display: block;
+}
+
+.search-form-row {
+  position: relative;
+  width: 458px;
+  margin-bottom: 29px;
+
+}
+
+.search-form-row:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.search-form label {
+  float: left;
+  padding: 5px 0 7px;
+}
+
+.search-form .field {
+  float: right;
+  line-height: 26px;
+  padding: 4px 15px 8px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background: #f2f2f2;
+}
+
+.search-form input {
+  color: #000000;
+}
+
+.search-form .field:hover {
+  background: #ebebeb;
+}
+
+.search-form .field:focus {
+  background: #ffffff;
+  outline: 2px solid #e5e5e5;
+}
+
+.search-form .date {
+  width: 346px;
+  padding-right: 37px;
+}
+
+.search-form .icon-calendar {
+  position: absolute;
+  right: 6px;
+  bottom: 0;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 38px;
+  color: #c2c2c2;
+  cursor: pointer;
+}
+
+.search-form .icon-calendar:hover {
+  color: #000000;
+}
+
+.search-form .icon-calendar:active {
+  color: #81b3d2;
+}
+
+.search-form-col {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.search-form-col .person {
+  width: 114px;
+  padding-left: 55px;
+  padding-right: 50px;
+}
+
+.search-form-col:first-child .person {
+  margin-right: 3px;
+}
+
+.search-form-col:last-child label {
+  margin-left: 50px;
+}
+
+.search-form-col-wrapper {
+  position: relative;
+}
+
+.search-form-col-wrapper .btn {
+  position: absolute;
+  top: 0;
+  padding: 6px 9px;
+  line-height: 26px;
+  color: #a9a9a9;
+  background: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.search-form-col-wrapper .btn:hover {
+  color: #000000;
+}
+
+.search-form-col-wrapper .btn:active {
+  color: #81b3d2;
+}
+
+.search-form-col-wrapper .minus-btn {
+  left: 112px;
+}
+
+.search-form-col-wrapper .plus-btn {
+  right: 0;
+}
+
+.search-form-col-wrapper:first-child .plus-btn {
+  right: 3px;
+}
+
+.search-form-col-wrapper:last-child .minus-btn {
+  left: 115px;
+}
+
+.search-form .find-btn {
+  display: block;
+  width: 458px;
+  margin: 0 auto;
+  margin-top: 54px;
+  padding: 14px 10px 15px;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #81b3d2;
+  border: none;
+  outline: none;
+}
+
+.search-form .find-btn:hover {
+  background: #669ec0;
+}
+
+.search-form .find-btn:active {
+  background: #5496bd;
+}
+
+.search-form .find-btn:active span {
+  opacity: 0.3;
+}
 
 /* --- MAP --- */
 .map {

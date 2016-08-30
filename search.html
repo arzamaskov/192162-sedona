@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <title>Седона: форма поиска</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container clearfix">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="Sedona" height="70" width="138"></a>
+        </div>
+        <nav class="main-menu">
+          <ul class="clearfix">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="inner.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container clearfix">
+
+        <section class="offers">>
+          <div class="search-form-wrapper">
+            <a>Поиск гостиницы в Седоне</a>
+            <form class="search-form-page search-form" action="" method="post">
+              <div class="search-form-row clearfix">
+                <label for="day-check-in">Дата заезда:</label>
+                <input class="date field" type="text" id="day-check-in" name="day-check-in" placeholder="24 апреля 2016">
+                <div class="icon-calendar"></div>
+              </div>
+              <div class="search-form-row clearfix">
+                <label for="day-check-out">Дата выезда:</label>
+                <input class="date field" type="text" id="day-check-out" name="day-check-out" placeholder="4 июля 2016">
+                <div class="icon-calendar"></div>
+              </div>
+              <div class="search-form-row clearfix">
+                <div class="search-form-col">
+                  <label for="adult">Взрослые:</label>
+                  <div class="search-form-col-wrapper">
+                    <button class="btn minus-btn" type="button">
+                      <i class="icon-minus"></i>
+                    </button>
+                    <input class="person field" type="text" name="adult" id="adult" value="2">
+                    <button class="btn plus-btn" type="button">
+                      <i class="icon-plus"></i>
+                    </button>
+                  </div>
+                </div><!--
+             --><div class="search-form-col">
+                  <label for="kid">Дети:</label>
+                  <div class="search-form-col-wrapper clearfix">
+                    <button class="btn minus-btn" type="button">
+                      <i class="icon-minus"></i>
+                    </button>
+                    <input class="person field" type="text" name="kid" id="kid" value="0">
+                    <button class="btn plus-btn" type="button">
+                      <i class="icon-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="find-btn" type="button"><span>Найти</span></button>
+            </form>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <div class="footer-left">
+          <span>#visitsedona</span>
+        </div>
+        <div class="footer-social-wrapper">
+          <div class="footer-social">
+            <a href="#" class="social-btn social-btn-tw">Твиттер<span class="icon-twitter"></span></a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук<span class="icon-facebook"></span></a>
+            <a href="#" class="social-btn social-btn-yt">Ютуб<span class="icon-youtube"></span></a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <span>Website by</span>
+          <div class="footer-logo">
+            <a href="https://htmlacademy.ru"><img src="img/logo-footer.png" alt="html academy" height="39" width="113"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
