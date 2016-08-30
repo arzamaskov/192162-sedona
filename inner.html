@@ -29,45 +29,70 @@
           <form class="filters-form clearfix" action="" method="post">
             <ul class="filters-form-infrastructure">
               <div class="filters-form-title">Инфраструктура</div>
-              <li><label><input type="checkbox" id="pool" name="pool" value="pool">Бассейн</label></li>
-              <li><label><input type="checkbox" id="parking" name="parking" value="parking">Парковка</label></li>
-              <li><label><input type="checkbox" id="wifi" name="wifi" value="wifi">Wi-Fi</label></li>
+              <li>
+                <input type="checkbox" id="pool" name="pool" value="pool">
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" id="parking" name="parking" value="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" id="wifi" name="wifi" value="wifi">
+                <label for="wifi">Wi-Fi</label>
+              </li>
             </ul>
             <ul class="filters-form-kind">
               <div class="filters-form-title">Тип жилья</div>
-              <li><label><input type="checkbox" id="hotel" name="hotel" value="hotel">Гостиница</label></li>
-              <li><label><input type="checkbox" id="motel" name="motel" value="motel">Мотель</label></li>
-              <li><label><input type="checkbox" id="apartment" name="apartment" value="apartment">Апартаменты</label></li>
+              <li>
+                <input type="checkbox" id="hotel" name="hotel" value="hotel">
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" id="motel" name="motel" value="motel">
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="apartment" name="apartment" value="apartment">
+                <label for="apartment">Апартаменты</label>
+              </li>
             </ul>
             <div class="filters-form-price">
               <div class="filters-form-title">Стоимость в сутки (р):</div>
-              <div class="filters-form-price-min">
-                <input type="text" name="min-price" placeholder="От 0">
+              <div class="filters-form-input-price">
+                <label class="filters-form-price-min">
+                  От <input type="text" name="min-price" placeholder="0">
+                </label>
+                <label class="filters-form-price-max">
+                  До <input type="text" name="max-price" placeholder="3000">
+                </label>
               </div>
-              <div class="filters-form-price-max">
-                <input type="text" name="max-price" placeholder="До 3000">
+              <div class="filters-form-price-wrapper">
+                <div class="filters-form-price-switch">
+                  <div class="filters-form-price-bar"></div>
+                </div>
+                  <div class="filters-form-price-bar-key filters-form-price-bar-min"></div>
+                  <div class="filters-form-price-bar-key filters-form-price-bar-max"></div>
               </div>
-              <div class="switch">
-                <span></span>
-                <span></span>
-              </div>
-              <button type="button">Показать</button>
+              <button class="btn" type="button">Показать</button>
             </div>
           </form>
         </section>
 
         <section class="result">
-            <div class="result-top">
+            <div class="result-top clearfix">
               <div class="result-top-left">
                 <span class="result-top-title">Найдено: 3</span>
-                <span>Сортировка:</span>
-                <a href="#">По цене</a>
-                <a href="#">По типу</a>
-                <a href="#">По рейтингу</a>
+                <span class="result-top-sort-title">Сортировка:</span>
+                <div class="result-top-sort">
+                  <a class="result-top-sort-current" href="#">По цене</a>
+                  <a href="#">По типу</a>
+                  <a href="#">По рейтингу</a>
+                </div>
               </div>
               <div class="result-top-right">
-                <a href="#">вверх</a>
-                <a href="#">вниз</a>
+                <a href="#"><span class="icon-up-dir"></span></a>
+                <a class="result-top-right-current" href="#"><span class="icon-down-dir"></span></a>
               </div>
             </div>
             <div class="result-body">
@@ -76,19 +101,29 @@
                   <img src="img/icon-amara.jpg" height="90" width="135" alt="Amara Resort Spa">
                 </div>
                 <div class="result-item-content">
-                  <div class="result-item-title">
-                    <h2>Amara Resort &amp;&nbsp;Spa</h2>
-                  </div>
+                  <h2 class="result-item-title">
+                    <a href="#">Amara Resort &amp;&nbsp;Spa</a>
+                  </h2>
                   <div class="result-item-description">
-                    <div class="result-item-kind">Гостиница</div>
-                    <div class="result-item-price">от 3 500 р.</div>
-                    <a href="#" class="btn btn-blue">Подробнее</a>
-                    <a href="#" class="btn btn-brown">Забронировать</a>
+                    <div class="result-item-kind">
+                      <span>Гостиница</span>
+                      <a href="#" class="btn btn-blue">Подробнее</a>
+                    </div>
+                    <div class="result-item-price">
+                      <span>от 3 500 р.</span>
+                      <a href="#" class="btn btn-brown">Забронировать</a>
+                    </div>
                   </div>
                 </div>
                 <div class="result-item-popular">
-                  <div class="result-item-stars"></div>
-                  <div class="result-item-rating">Рейтинг: 8,5</div>
+                  <div class="result-item-stars">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
+                  <span class="result-item-rating">Рейтинг: 8,5</span>
                 </div>
               </article>
               <article class="result-item">
@@ -96,19 +131,29 @@
                   <img src="img/icon-desert-quail.jpg" height="90" width="135" alt="Desert Quail Inn">
                 </div>
                 <div class="result-item-content">
-                  <div class="result-item-title">
-                    <h2>Desert Quail Inn</h2>
-                  </div>
+                  <h2 class="result-item-title">
+                    <a href="#">Desert Quail Inn</a>
+                  </h2>
                   <div class="result-item-description">
-                    <div class="result-item-kind">Мотель</div>
-                    <div class="result-item-price">от 2 000 р.</div>
-                    <a href="#" class="btn btn-blue">Подробнее</a>
-                    <a href="#" class="btn btn-brown">Забронировать</a>
+                    <div class="result-item-kind">
+                      <span>Мотель</span>
+                      <a href="#" class="btn btn-blue">Подробнее</a>
+                    </div>
+                    <div class="result-item-price">
+                      <span>от 2 000 р.</span>
+                      <a href="#" class="btn btn-brown">Забронировать</a>
+                    </div>
                   </div>
                 </div>
                 <div class="result-item-popular">
-                  <div class="result-item-stars"></div>
-                  <div class="result-item-rating">Рейтинг: 8,9</div>
+                  <div class="result-item-stars">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
+                  <span class="result-item-rating">Рейтинг: 8,9</span>
                 </div>
               </article>
               <article class="result-item">
@@ -116,19 +161,29 @@
                   <img src="img/icon-villas.jpg" height="90" width="135" alt="Villas at Poco Diablo">
                 </div>
                 <div class="result-item-content">
-                  <div class="result-item-title">
-                    <h2>Villas at Poco Diablo</h2>
-                  </div>
+                  <h2 class="result-item-title">
+                    <a href="#">Villas at Poco Diablo</a>
+                  </h2>
                   <div class="result-item-description">
-                    <div class="result-item-kind">Апартаменты</div>
-                    <div class="result-item-price">от 4 000 р.</div>
-                    <a href="#" class="btn btn-blue">Подробнее</a>
-                    <a href="#" class="btn btn-brown">Забронировать</a>
+                    <div class="result-item-kind">
+                      <span>Апартаменты</span>
+                      <a href="#" class="btn btn-blue">Подробнее</a>
+                    </div>
+                    <div class="result-item-price">
+                      <span>от 4 000 р.</span>
+                      <a href="#" class="btn btn-brown">Забронировать</a>
+                    </div>
                   </div>
                 </div>
                 <div class="result-item-popular">
-                  <div class="result-item-stars"></div>
-                  <div class="result-item-rating">Рейтинг: 9,2</div>
+                  <div class="result-item-stars">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                  </div>
+                  <span class="result-item-rating">Рейтинг: 9,2</span>
                 </div>
               </article>
             </div>
