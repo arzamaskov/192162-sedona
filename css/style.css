@@ -373,9 +373,10 @@ img {
   position: relative;
   width: 568px;
   margin: 0 auto;
+
 }
 
-.search-form-wrapper a {
+.search-form-btn {
   display: inline-block;
   vertical-align: top;
   margin-top: 31px;
@@ -391,8 +392,8 @@ img {
 }
 
 .search-form {
-  display: none; // Выключить
   position: absolute;
+  display: none;
   top: 117px;
   left: 0;
   width: 568px;
@@ -404,6 +405,36 @@ img {
   font-weight: bold;
   background: #ffffff;
   z-index: 1;
+}
+
+
+@keyframes appear {
+  from {
+    transform: translate(0, -100px) scale(0);
+  }
+  to {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes disappear {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(0, -100px) scale(0);
+  }
+}
+
+
+.search-form-visible {
+  display: block;
+  animation: appear 0.3s ease-in-out;
+}
+
+.search-form-invisible {
+  display: block;
+  animation: disappear 0.3s ease-in-out forwards;;
 }
 
 .search-form-page.search-form {
@@ -561,6 +592,13 @@ img {
 .search-form .find-btn:active span {
   opacity: 0.3;
 }
+
+
+
+
+
+
+
 
 /* --- MAP --- */
 .map {
