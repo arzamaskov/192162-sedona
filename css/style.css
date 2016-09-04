@@ -82,6 +82,12 @@ img {
   clear: both;
 }
 
+.shadow {
+  box-shadow: 0 0 30px 10px #dbdbdb;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -231,8 +237,6 @@ img {
 .features-items-benefits {
   min-height: 330px;
 
-  /* для сетки */
-  box-shadow: 0 0 0 1px yellow;
 }
 
 .features-item {
@@ -560,13 +564,18 @@ img {
 
 /* --- MAP --- */
 .map {
-  height: 473px;
-  background: #cbdda9 url("../img/map.jpg") no-repeat 50% 60%;
+  height: 595px; // увеличил на 122
+
+  background-color: #cbdda9;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
 
 }
 
 .map-iframe {
-  min-height: 473px;
+  min-height: 595px; // уввеличил на 122
+  width: 100%
 }
 
 /* --- inner.html --- */
@@ -1022,7 +1031,12 @@ img {
 
 .main-footer {
   min-height: 122px;
+  background-color: #ffffff;
+}
 
+.main-footer-index {
+  margin-top: -122px;
+  opacity: 0.9;
 }
 
 .footer-left {
