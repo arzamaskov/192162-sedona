@@ -593,16 +593,9 @@ img {
   opacity: 0.3;
 }
 
-
-
-
-
-
-
-
 /* --- MAP --- */
 .map {
-  height: 595px; // увеличил на 122
+  height: 595px;
 
   background-color: #cbdda9;
   background-image: url("../img/map.jpg");
@@ -612,7 +605,7 @@ img {
 }
 
 .map-iframe {
-  min-height: 595px; // уввеличил на 122
+  height: 595px;
   width: 100%
 }
 
@@ -732,6 +725,13 @@ img {
   color: #ffffff;
 
 }
+input[type="text"]::-moz-placeholder {
+   color: #ffffff;
+ }
+
+input[type="text"]::-webkit-input-placeholder {
+   color: #ffffff;
+ }
 
 .filters-form-input-price::after {
   content: '';
@@ -792,11 +792,13 @@ img {
 .filters-form-price .btn {
   display: block;
   margin: 32px auto 33px;
-  padding: 6px 36px;
+  padding: 6px 29px;
   line-height: 20px;
   text-transform: uppercase;
   background: none;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
   border: 2px solid #ffffff;
   border-radius: 2px;
   outline: none;
@@ -1094,18 +1096,13 @@ img {
   font-weight: 700;
 }
 
-.footer-social-wrapper {
+.footer-social {
   float: left;
   width: 400px;
-  min-height: 122px;
-
-}
-
-.footer-social {
-  width: 200px;
-  min-height: 120px;
   margin: 0 auto;
   margin-top: 36px;
+
+
 }
 
 .social-btn {
