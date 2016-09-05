@@ -148,6 +148,18 @@ img {
   margin-left: 92px;
 }
 
+.main-menu .main-menu-active {
+  color: #766357;
+}
+
+.main-menu .main-menu-active:hover {
+  color: #604e43;
+}
+
+.main-menu .main-menu-active:active {
+  color: #d6d0cc;
+}
+
 /* --- Index photo --- */
 .intro {
   min-height: 509px;
@@ -460,7 +472,7 @@ img {
 .search-form .field {
   float: right;
   line-height: 26px;
-  padding: 4px 15px 8px;
+  padding: 5px 15px 7px;
   border: none;
   outline: none;
   box-sizing: border-box;
@@ -725,11 +737,11 @@ img {
   color: #ffffff;
 
 }
-input[type="text"]::-moz-placeholder {
+.filters-form-input-price input[type="text"]::-moz-placeholder {
    color: #ffffff;
  }
 
-input[type="text"]::-webkit-input-placeholder {
+.filters-form-input-price input[type="text"]::-webkit-input-placeholder {
    color: #ffffff;
  }
 
@@ -1113,6 +1125,14 @@ input[type="text"]::-webkit-input-placeholder {
   vertical-align: top;
   font-size: 0;
   background-color: #81b3d2;
+}
+
+.social-btn:hover {
+  background-color: #669ec0;
+}
+
+.social-btn:active {
+  background-color: #5496bd;
 }
 
 .social-btn span {
