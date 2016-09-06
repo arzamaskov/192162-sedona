@@ -11,3 +11,12 @@ link.addEventListener("click", function(event) {
     searchForm.classList.remove("search-form-invisible");
   };
 });
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (searchForm.classList.contains("search-form-visible")) {
+      searchForm.classList.add("search-form-invisible");
+      searchForm.classList.remove("search-form-visible");
+    }
+  }
+});
