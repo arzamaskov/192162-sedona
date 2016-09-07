@@ -97,13 +97,14 @@ img {
 
 /* --- HEADER --- */
 .main-header {
+  position: relative;
   min-height: 55px;
 
 }
 
 .logo {
   position: absolute;
-  left: 50%;
+  left: 600px;
   margin-left: -69px;
   width: 138px;
   height: 70px;
@@ -244,6 +245,7 @@ img {
   width: 300px;
   min-height: 45px;
   margin: 0 auto;
+  line-height: 22px;
 }
 
 .features-items-benefits {
@@ -267,6 +269,7 @@ img {
   min-height: 50px;
   margin: 0 auto;
   margin-top: 21px;
+  line-height: 22px;
 }
 
 .features-icon-house {
@@ -324,6 +327,7 @@ img {
   width: 320px;
   min-height: 45px;
   margin: 0 auto;
+  line-height: 22px;
 }
 
 
@@ -357,6 +361,7 @@ img {
   width: 285px;
   min-height: 55px;
   margin: 0 auto;
+  line-height: 22px;
 }
 
 
@@ -622,34 +627,49 @@ img {
 
 /* --- inner.html --- */
 /* --- Filters --- */
-
-.filters-form {
-  min-height: 190;
+.filters {
+  width: 100%;
+  color: #ffffff;
   background: #566f83 url("../img/filter-background.jpg") no-repeat 50% 10%;
 }
 
-.filters-form-infrastructure {
+.filters-form-infrastructure,
+.filters-form-kind,
+.filters-form-price {
   float: left;
-  width: 180px;
-  min-height: 190px;
+  width: 227px;
+  padding-left: 73px;
+  padding-top: 29px;
+  padding-bottom: 32px;
 
+  /*background: rgba(255, 42, 82, 0.5);
+  box-shadow: 0 0 0 2px rgb(255, 42, 82);*/
+}
+
+.filters-form-kind {
+  padding-left: 26px;
+}
+
+.filters-form-price {
+  float: right;
+  width: 328px;
+  padding-left: 200px;
+  padding-right: 72px;
 }
 
 .filters-form ul {
   margin: 0;
-  padding: 0;
   list-style: none;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
   text-align: left;
-  padding-top: 28px;
-  padding-left: 73px;
+
 }
 
 .filters-form li {
   font-size: 14px;
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 .filters-form input[type="checkbox"] {
@@ -676,31 +696,15 @@ img {
   content: "\2611";
 }
 
-.filters-form-kind {
-  float: left;
-  width: 150px;
-  min-height: 190px;
-
-}
-
-.filters-form-price {
-  float: right;
-  width: 328px;
-  min-height: 192px;
-  padding-top: 28px;
-  padding-right: 73px;
-
-}
-
 .filters-form-title {
-  margin-left: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   text-align: left;
   font-size: 16px;
-  font-weight: 700;
   line-height: 21px;
-  color: #ffffff;
+}
 
+.filters-form-price .filters-form-title {
+  margin-bottom: 10px;
 }
 
 .filters-form-input-price {
@@ -708,10 +712,13 @@ img {
   height: 31px;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  margin-left: 12px;
+  margin-left: 11px;
   margin-bottom: 20px;
   text-align: left;
 
+
+  /*background: rgba(55, 42, 82, 0.5);
+  box-shadow: 0 0 0 2px rgb(55, 42, 82);*/
 }
 
 .filters-form-input-price label {
@@ -733,6 +740,7 @@ img {
   background: none;
   outline: none;
   font-size: 14px;
+  line-height: 14px;
   color: #ffffff;
 
 }
@@ -797,12 +805,14 @@ img {
 }
 
 .filters-form-price-bar-max {
-  left: 253px;
+  left: 252px;
 }
 
 .filters-form-price .btn {
   display: block;
-  margin: 32px auto 33px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 6px 29px;
   line-height: 20px;
   text-transform: uppercase;
