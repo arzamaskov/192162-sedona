@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
 
@@ -27,11 +29,11 @@
     <main>
       <div class="container">
         <section class="filters">
-          <form class="filters-form clearfix" action="" method="post">
+          <form class="filters-form clearfix" action="echo.php" method="post">
             <ul class="filters-form-infrastructure">
-              <div class="filters-form-title">Инфраструктура</div>
+              <li class="filters-form-title">Инфраструктура</li>
               <li>
-                <input type="checkbox" id="pool" name="pool" value="pool">
+                <input type="checkbox" id="pool" name="pool" value="pool" checked="">
                 <label for="pool">Бассейн</label>
               </li>
               <li>
@@ -44,17 +46,17 @@
               </li>
             </ul>
             <ul class="filters-form-kind">
-              <div class="filters-form-title">Тип жилья</div>
+              <li class="filters-form-title">Тип жилья</li>
               <li>
-                <input type="checkbox" id="hotel" name="hotel" value="hotel">
+                <input type="checkbox" id="hotel" name="hotel" value="hotel" checked="">
                 <label for="hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" id="motel" name="motel" value="motel">
+                <input type="checkbox" id="motel" name="motel" value="motel" checked="">
                 <label for="motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" id="apartment" name="apartment" value="apartment">
+                <input type="checkbox" id="apartment" name="apartment" value="apartment" checked="">
                 <label for="apartment">Апартаменты</label>
               </li>
             </ul>

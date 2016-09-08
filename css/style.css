@@ -62,7 +62,7 @@ body {
   text-transform: uppercase;
   /* Оформление */
   color: #000000;
-
+  background-color: #ffffff;
 }
 
 h2 {
@@ -83,7 +83,8 @@ img {
 }
 
 .shadow {
-  box-shadow: 0 0 30px 10px #dbdbdb;
+  /*box-shadow: 0 0 10px 5px #dbdbdb;*/
+  box-shadow: 0 0 10px 3px #dedede;
   width: 1200px;
   margin: 0 auto;
 }
@@ -129,6 +130,7 @@ img {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
+  line-height: 26px;
 }
 
 .main-menu a:hover {
@@ -208,6 +210,11 @@ img {
 
 }
 
+.features-title p {
+  line-height: 26px;
+  color: #333333;
+}
+
 /* --- FEACHERS --- */
 .features-item-active-left {
   min-height: 256px;
@@ -238,14 +245,15 @@ img {
   min-height: 45px;
   margin: 0 auto;
   margin-top: 55px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 21px;
 }
 
 .features-item-active-left p {
   width: 300px;
   min-height: 45px;
   margin: 0 auto;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .features-items-benefits {
@@ -261,15 +269,17 @@ img {
 
 .features-item h2 {
   margin: 0 auto;
-  margin-top: 161px;
+  margin-top: 163px;
+  line-height: 21px;
 }
 
 .features-item p {
   width: 300px;
   min-height: 50px;
   margin: 0 auto;
-  margin-top: 21px;
-  line-height: 22px;
+  margin-top: 23px;
+  line-height: 21px;
+  color #333333;
 }
 
 .features-icon-house {
@@ -320,14 +330,15 @@ img {
   min-height: 45px;
   margin: 0 auto;
   margin-top: 56px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  line-height: 21px;
 }
 
 .features-item-active-right p {
   width: 320px;
   min-height: 45px;
   margin: 0 auto;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 
@@ -348,27 +359,75 @@ img {
   min-height: 15px;
   margin: 0 auto;
   margin-top: 47px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
+  line-height: 21px;
 }
 
 .features-item-no-active-number {
   width: 60px;
   margin: 0 auto;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .features-item-no-active-description {
   width: 285px;
   min-height: 55px;
   margin: 0 auto;
-  line-height: 22px;
+  line-height: 21px;
+  color: #333333;
 }
 
+.features-item-active-left-description p.number,
+.features-item-active-right-description p.number {
+  width: 60px;
+}
+
+.number,
+.number-black {
+  position: relative;
+}
+
+.number::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  border: 1px solid white;
+  left: 0;
+  top: 10px;
+}
+
+.number::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  border: 1px solid white;
+  left: 45px;
+  top: 10px;
+}
+
+.number-black::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  border: 1px solid #333333;
+  left: 0;
+  top: 10px;
+}
+
+.number-black::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  border: 1px solid #333333;
+  left: 45px;
+  top: 10px;
+}
 
 /* --- Offers --- */
 .offers {
   min-height: 233px;
-
 }
 
 .offers-title {
@@ -377,8 +436,13 @@ img {
   font-weight: 700;
 }
 
+.offers-title h2 {
+  font-size: 30px;
+}
+
 .offers-description {
   margin-top: 30px;
+  color: #333333;
 }
 
 
@@ -422,21 +486,47 @@ img {
 }
 
 
-@keyframes appear {
+@-webkit-keyframes appear {
   from {
-    transform: translate(0, -100px) scale(0);
+    -webkit-transform: translate(0, -100px) scale(0);
+            transform: translate(0, -100px) scale(0);
   }
   to {
-    transform: translate(0, 0) scale(1);
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    -webkit-transform: translate(0, -100px) scale(0);
+            transform: translate(0, -100px) scale(0);
+  }
+  to {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+}
+
+@-webkit-keyframes disappear {
+  from {
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+  }
+  to {
+    -webkit-transform: translate(0, -100px) scale(0);
+            transform: translate(0, -100px) scale(0);
   }
 }
 
 @keyframes disappear {
   from {
-    transform: translate(0, 0) scale(1);
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
   }
   to {
-    transform: translate(0, -100px) scale(0);
+    -webkit-transform: translate(0, -100px) scale(0);
+            transform: translate(0, -100px) scale(0);
   }
 }
 
@@ -636,7 +726,7 @@ img {
   float: left;
   width: 227px;
   padding-left: 73px;
-  padding-top: 29px;
+  padding-top: 4px;
   padding-bottom: 32px;
 }
 
@@ -649,6 +739,7 @@ img {
   width: 328px;
   padding-left: 200px;
   padding-right: 72px;
+  padding-top: 29px;
 }
 
 .filters-form ul {
@@ -695,6 +786,7 @@ img {
   text-align: left;
   font-size: 16px;
   line-height: 21px;
+  font-weight: bold;
 }
 
 .filters-form-price .filters-form-title {
@@ -729,8 +821,9 @@ img {
   border: none;
   background: none;
   outline: none;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 21px;
   color: #ffffff;
 }
 
@@ -799,17 +892,17 @@ img {
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
-  padding: 6px 29px;
-  line-height: 20px;
+  padding: 5px 33px;
   text-transform: uppercase;
   background: none;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 21px;
   border: 2px solid #ffffff;
   border-radius: 2px;
   outline: none;
   cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .filters-form-price .btn:hover {
@@ -844,6 +937,7 @@ img {
   box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
 }
 
 .result-top-sort-title {
@@ -965,6 +1059,7 @@ img {
 
 .result-item-title a {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 7px;
   line-height: 26px;
   color: inherit;
@@ -989,7 +1084,9 @@ img {
 
 .result-item-content span {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  line-height: 21px;
+  font-weight: normal;
 }
 
 .result-item-content .btn {
@@ -997,7 +1094,7 @@ img {
   padding: 1px 16px;
   margin-top: 1px;
   vertical-align: top;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -1065,6 +1162,8 @@ img {
   padding: 1px 13px;
   margin-right: 72px;
   background: #f2f2f2;
+  color: #666666;
+  line-height: 21px;
 }
 
 /* --- MAIN FOOTER --- */
@@ -1100,6 +1199,7 @@ img {
   width: 400px;
   margin: 0 auto;
   margin-top: 36px;
+  opacity: 1;
 }
 
 .social-btn {
@@ -1139,6 +1239,7 @@ img {
   position: absolute;
   top: 47px;
   left: 102px;
+  line-height: 26px;
 }
 
 .footer-logo {
